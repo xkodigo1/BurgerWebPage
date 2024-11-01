@@ -1,21 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Cascadia Code',sans-serif;       
   background-color: #1e1d2b;
   height: 100vw;
 }
-section {
+.h-p {
   height: 100vh;
   width: 100vh;
 } 
+.sec-2 {
+  height: 100vh;
+  width: 100vh;
+}
+.sec-3 {
+  height: 100vh;
+  width: 100vh;
+}
+.sec-4 {
+  height: 100vh;
+  width: 100vh;
+}
+.sec-5 {
+  height: 80vh;
+  width: 100vh;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,7 +42,9 @@ nav {
   padding: 1rem;
   background-color: #1e1d2b;
   color: white;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
 }
 
 /* responsive */
@@ -36,6 +57,7 @@ nav h2.logo {
   font-weight: bold;
   font-size: xx-large;
   color: #ff702a;
+  margin-left: 20px;
 }
 
 nav .bars {
@@ -88,4 +110,310 @@ li.nav-link a {
   nav .nav-links {
     display: none;
   }
+}
+.container-p1 {
+  position: absolute;
+  left: 10%;
+  right: 50%;
+  top: 40%;
+  color: white;
+}
+
+.ttl-p1 {
+  font-size:80px;
+  color: #ff702a;
+  font-weight: 100;
+}
+.img-home {
+  position: absolute;
+  margin-top: 7%;
+}
+
+.fig-home {
+    position: absolute; top: 10%; left: 55%; right: 10%;
+}
+
+.button { 
+  padding: 8px; color: white; background-color: #ff702a; text-align: center; text-decoration: none; 
+}
+
+.button:hover {
+  background-color: white; color: #ff702a; transition: background-color 0.3s, color 0.3s; 
+}
+.text-1, .text-2 {
+  font-weight: 300;
+  font-size: 29px;
+}
+.button {
+  line-height: 100px;
+}
+
+.container-p2 {
+  position: absolute;
+  left: 55%;
+  right: 70%;
+  margin-top: 17%;
+  font-size: 20px;
+  color: white;
+  width: 80vh;
+}
+.ttl-p2 {
+  color: #ff702a;
+  font-weight: 500;
+}
+.subttl-p2 {
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+}
+.text-p2 {
+  font-family: 'Cascadia Code',sans-serif;       
+  font-weight: 400;
+  margin-top: 20px;
+}
+.img-about {
+  position: absolute;
+  margin-top: 7%;
+}
+.fig-about {
+  position: absolute; left: 10%; right: 50%;
+  margin-top: 5%;
+}
+
+.container-p3-img-1 {
+  position: absolute;
+  left: 12%;
+  margin-top: 12%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  width: 50vh;
+  line-height: 40px;
+  background-color: #ffefe8;
+  padding: 40px;
+  border-radius: 20px;
+  height: 430px;
+  width: 330px;
+}
+.container-p3-img-2 {
+  position: absolute;
+  left: 39%;
+  margin-top: 12%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  width: 50vh;
+  line-height: 40px;
+  background-color: #ffefe8;
+  padding: 40px;
+  border-radius: 20px;
+  height: 430px;
+  width: 330px;
+}
+.container-p3-img-3 {
+  position: absolute;
+  left: 66%;
+  margin-top: 12%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  width: 50vh;
+  line-height: 40px;
+  background-color: #ffefe8;
+  padding: 40px;
+  border-radius: 20px;
+  height: 430px;
+  width: 330px;
+}
+.price {
+  color: #ff702a;
+}
+.product-name, .tasty-food, .price {
+  justify-content: center;
+  text-align: center;
+}
+.ttl-p3, .subttl-p3 {
+  position: relative;
+  color: white;
+  left: 55%;
+  margin-top: 1%;
+  bottom: -17%;
+  text-align: center;
+}
+.ttl-p3 {
+  font-weight: 500;
+  color: #ff702a;
+}
+.subttl-p3 {
+  font-size: 50px;
+  width: 110vh;
+}
+.container-p4-img-1 {
+  position: absolute;
+  left: 14%;
+  margin-top: 12%;
+  color: white;
+}
+.container-p4-img-2 {
+  position: absolute;
+  left: 40%;
+  margin-top: 12%;
+  color: white; 
+}
+.container-p4-img-3 {
+  position: absolute;
+  left: 68%;
+  margin-top: 12%;
+  color: white;
+}
+.ttl-p4, .subttl-p4 {
+  position: relative;
+  color: white;
+  left: 55%;
+  margin-top: 1%;
+  bottom: -17%;
+  text-align: center;
+}
+.ttl-p4 {
+  font-weight: 500;
+  color: #ff702a;
+  padding-bottom: 20px;
+}
+.subttl-p4 {
+  font-size: 40px;
+  width: 100vh;
+}
+.order, .shipping, .delivered {
+  color: #ff702a;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+.text-p4 {
+  padding-top: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 40vh;
+}
+.container-p5 {
+  position: absolute;
+  margin-top: 5%;
+  left: 15%;
+  width: 75%;
+  height: 50%;
+  justify-content: center;
+  text-align:  center;
+  background-color: #ffefe8;
+  padding: 80px;
+  border-radius: 20px;
+}
+.ttl-p5 {
+  font-weight: 400;
+  font-size: 50px;
+}
+.button-learn { 
+  position: absolute;
+  margin-top: 5%;
+  left: 44%;
+  padding: 8px; color: white; background-color: #ff702a; text-align: center; text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+} 
+.button-learn:hover {
+  background-color: white; color: #ff702a; transition: background-color 0.3s, color 0.3s; 
+}
+.globalorder{
+  color: #ff702a;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.globaltextorder{
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.top-section {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.top-section h2,
+.top-section p {
+  margin: 0.5rem 0;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background-color: #ff6b3d;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.learn-more-btn:hover {
+  background-color: #ff5a2c;
+}
+
+.bottom-section {
+  background-color: #1e1d2b;
+  color: white;
+  padding: 3rem 1.5rem;
+  overflow: hidden;
+}
+
+.footer-column {
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.footer-column h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #FF6F3C;
+  margin-top: 5px;
+}
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ff6b3d;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.wsp, .meta, .ig, .tw {
+  background-color: white;
+  border-radius: 11px;
 }
